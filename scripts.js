@@ -66,6 +66,9 @@ const text = (() => {
   
   // fall sem sér um að bæta við nýju item
   function add(value) {
+    // b = /\S/.test(value)
+    // b er satt ef value inniheldur a.m.k. 
+    // eitt tákn sem er ekki bil, annars ósatt
     if(/\S/.test(value)){
       const item = document.createElement('li');
       item.classList.add('item');
